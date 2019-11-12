@@ -1,0 +1,2 @@
+include ':app', ':core', ':database', ':webservice'
+rootProject.name='FitApp'
