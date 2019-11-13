@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         List<Korisnik> sviKorisnici = baza.getDAO().dohvatiSveKorisnike();
         for (Korisnik k:sviKorisnici){
             String sadrzaj = "";
-            sadrzaj += k.getIme()+" "+k.getPrezime()+"/n";
+            sadrzaj += k.getIme()+" "+k.getPrezime()+System.getProperty("line.separator");
             prikazKorisnika.append(sadrzaj);
         }
     }
